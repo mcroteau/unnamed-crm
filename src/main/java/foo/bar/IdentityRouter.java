@@ -52,7 +52,6 @@ public class IdentityRouter {
             System.out.println(component.getName() + ":" + component.getValue());
         }
 
-
         GoogleIdTokenVerifier verifier = new GoogleIdTokenVerifier.Builder(new NetHttpTransport(), GsonFactory.getDefaultInstance())
                 // Specify the CLIENT_ID of the app that accesses the backend:
                 .setAudience(Collections.singletonList("853775900865-shi5quv3nosocpv93dre4cpq5kqe9q19.apps.googleusercontent.com"))
